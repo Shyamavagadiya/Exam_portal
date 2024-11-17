@@ -1,13 +1,7 @@
-import 'package:canvas_2/login_page.dart';
-//core Firebase functionality needed to initialize Firebase in the app.
-import 'package:firebase_core/firebase_core.dart';
-// Material Design library,provides 
-//a comprehensive set of widgets and tools to create visually appealing apps.
-import 'package:flutter/material.dart';
-//It contains configuration details (like API keys and project IDs) 
-//specific to your Firebase project.
-import 'firebase_options.dart';
-
+import 'package:canvas_2/login_page.dart'; // Import the login page
+import 'package:firebase_core/firebase_core.dart'; // Firebase initialization
+import 'package:flutter/material.dart'; // Material Design library
+import 'firebase_options.dart'; // Firebase options configuration
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Firebase App',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: LoginPage(),  // After login, navigate to the CodeCompilerScreen
+      home: LoginPage(), // After login, navigate to the LoginPage
+      debugShowCheckedModeBanner: false, // Remove the debug banner
     );
   }
 }

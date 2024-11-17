@@ -91,28 +91,6 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
                 // Right side with image and "Sign up" text
-                Row(
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(40),
-                      child: Image.asset(
-                        "images/boy.png",
-                        height: 25,
-                        width: 25,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    const SizedBox(width: 10.0),
-                    const Text(
-                      "Sign up",
-                      style: TextStyle(
-                        color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
               ],
             ),
           ),
